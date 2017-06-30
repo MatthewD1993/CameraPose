@@ -27,7 +27,7 @@ def Network(input_tensor):
 
     # LSTM Cell
     lstm_cell  = tf.nn.rnn_cell.LSTMCell(256, state_is_tuple=True)
-    output, _ = tf.nn.rnn(lstm_cell, dataLayer, dtype=tf.float64)
+    output, _ = tf.nn.static_rnn(lstm_cell, dataLayer, dtype=tf.float64)
 
     lstm_weights = tf.Variable(tf.random_normal([256, 128], dtype=tf.float64) / np.sqrt(256), dtype=tf.float64)
     lstm_bias    = tf.Variable(tf.zeros([128], dtype=tf.float64), dtype=tf.float64)
