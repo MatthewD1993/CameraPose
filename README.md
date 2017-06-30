@@ -1,3 +1,7 @@
+# HIWI project at DFKI
+Based on Jan and Jason's work, this is a working repo.
+
+
 # Deep Learning Camera Pose Estimation
 
 Camera Pose Estimation originally based on Kalman Filter, using Deep Learning and recurrent neural networks.
