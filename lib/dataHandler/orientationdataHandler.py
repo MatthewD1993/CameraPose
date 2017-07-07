@@ -17,6 +17,8 @@ class DataHandler:
         self.validation_data = []
         self.validation_ground_truth = []
 
+        
+
 
         self.batch_size = batch_size
         self.batch_pointer = 0
